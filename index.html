@@ -19,18 +19,23 @@
 <body>
 
 	<div class="container-fluid">
+		<h1>Padgett's Florentine Families</h1>
 
-		<div class="row">
-			<div class="col-md-12">
-				
-				<h1>Padgett's Florentine Families</h1>
+		<!-- Select box to choose the sorting type -->
+		<form class="form-inline">
+			<div class="form-group">
+		    <select class="form-control" id="sortOrder" onChange="updateVis()">
+				  <option value="name">Default ordering</option>
+				  <option value="businessTies">Business Ties</option>
+				  <option value="marriages">Marriages</option>
+				  <option value="Wealth">Wealth</option>
+				  <option value="Priorates">Priorates</option>
+				</select>
+		  </div>
+		</form>
 
-				<!-- Visualization placeholders -->
-				<div id="chart"></div>
-			
-			</div>
-		</div>
-
+		<!-- Visualization placeholders -->
+		<div id="chart"></div>
 	</div>
 
 	<!-- Load JS libraries -->
